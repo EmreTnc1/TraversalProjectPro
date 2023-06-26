@@ -13,6 +13,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Login_v1\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="wwwroot\Login_v1\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="wwwroot\Login_v1\fonts\montserrat\" />
+    <Folder Include="wwwroot\Login_v1\fonts\poppins\" />
+    <Folder Include="wwwroot\Login_v1\images\icons\" />
+    <Folder Include="wwwroot\Login_v1\js\" />
+    <Folder Include="wwwroot\Login_v1\vendor\bootstrap\js\" />
+    <Folder Include="wwwroot\Login_v1\vendor\jquery\" />
+    <Folder Include="wwwroot\Login_v1\vendor\tilt\" />
     <Folder Include="wwwroot\Traversal-Liberty\assets\fonts\" />
     <Folder Include="wwwroot\Traversal-Liberty\assets\images\" />
   </ItemGroup>
