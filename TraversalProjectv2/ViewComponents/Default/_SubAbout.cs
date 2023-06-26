@@ -1,16 +1,16 @@
 ﻿using Business.Concrete;
-using DataAccess.Concrete;
 using DataAccess.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TraversalCoreProject.ViewComponents.Default
 {
-    public class _Feature : ViewComponent
+    public class _SubAbout : ViewComponent
     {
-        FeatureManager featureManager = new FeatureManager(new EfFeaureDal());
+        SubAboutManager subAboutManager = new SubAboutManager(new EfSubAboutDal());
         public IViewComponentResult Invoke()
         {
-            return View();
+            var values = subAboutManager.TGetList();
+            return View(values);
         }
     }
 }
