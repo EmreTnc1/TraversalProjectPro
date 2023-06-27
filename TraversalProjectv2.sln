@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversalProjectv2", "TraversalProjectv2\TraversalProjectv2.csproj", "{FBC113A3-7702-4825-9FCC-01B20D667BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraversalProjectv2", "TraversalProjectv2\TraversalProjectv2.csproj", "{FBC113A3-7702-4825-9FCC-01B20D667BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{F1046669-FBBD-4C47-8557-65C803F8953A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{F1046669-FBBD-4C47-8557-65C803F8953A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5215DADD-8399-4FE6-8F8B-CF722C313BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5215DADD-8399-4FE6-8F8B-CF722C313BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{C708EAA5-C04B-43F1-B5E2-9BE7D8FE2405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{C708EAA5-C04B-43F1-B5E2-9BE7D8FE2405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
