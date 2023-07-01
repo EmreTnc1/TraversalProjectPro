@@ -36,3 +36,15 @@ namespace DataAccess.Repository
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+c.SaveChanges();
