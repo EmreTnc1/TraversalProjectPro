@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.Container;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 using DataAccess.EntityFramework;
@@ -36,16 +37,7 @@ namespace TraversalCoreProject
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
             services.AddControllersWithViews();
 
-            services.AddScoped<ICommentService, CommentManager>();
-            services.AddScoped<ICommentDal, EfCommentDal>();
-
-            services.AddScoped<IDestinationService, DestinationManager>();
-            services.AddScoped<IDestinationDal, EfDestinationDal>();
-
-            services.AddScoped<IAppUserService, AppUserManager>();
-            services.AddScoped<IAppUserDal, EfAppUserDal>();
-
-
+            services.ContainerDependencies();
 
             services.AddMvc(config => { var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build(); config.Filters.Add(new AuthorizeFilter(policy)); });
 
@@ -67,6 +59,9 @@ namespace TraversalCoreProject
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
