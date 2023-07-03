@@ -20,17 +20,27 @@ namespace Business.Concrete
 
         public void TAdd(Guide t)
         {
-            throw new NotImplementedException();
+            _guideDal.Insert(t);
+        }
+
+        public void TChangeToDisableByGuide(int id)
+        {
+            _guideDal.ChangeToDisableByGuide(id);
+        }
+
+        public void TChangeToEnableByGuide(int id)
+        {
+            _guideDal.ChangeToEnableByGuide(id);
         }
 
         public void TDelete(Guide t)
         {
-            throw new NotImplementedException();
+            _guideDal.Delete(t);
         }
 
         public Guide TGetByID(int id)
         {
-            throw new NotImplementedException();
+            return _guideDal.GetByID(id);
         }
 
         public List<Guide> TGetList()
@@ -40,7 +50,7 @@ namespace Business.Concrete
 
         public void TUpdate(Guide t)
         {
-            throw new NotImplementedException();
+            _guideDal.Update(t);
         }
     }
 }

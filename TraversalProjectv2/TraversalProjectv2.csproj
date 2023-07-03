@@ -37,6 +37,7 @@
 		<Folder Include="Areas\Admin\Models\" />
 		<Folder Include="Areas\Member\Data\" />
 		<Folder Include="wwwroot\pdfreports\" />
+		<Folder Include="wwwroot\pdfreports\" />
 		<Folder Include="wwwroot\userimages\" />
 	</ItemGroup>
 
